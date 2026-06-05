@@ -1,247 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PrimeNest Real Estate</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PrimeNest Real Estate - Premium Properties in Kenya</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Header / Hero -->
-  <header class="hero">
-    <div class="navbar">
-      <h1 class="logo">PrimeNest Realty</h1>
-      <nav>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#properties">Properties</a></li>
-          <li><a href="#why-us">Why Us</a></li>
-          <li><a href="#site-visit">Book Visit</a></li>
-          <li><a href="#contact">Contact</a></li>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">PrimeNest</a>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="search.html?status=buy">Buy</a></li>
+          <li><a href="search.html?status=rent">Rent</a></li>
+          <li><a href="#">Sell</a></li>
+          <li><a href="agents.html">Our Agents</a></li>
+          <li><a href="blog.html">Insights</a></li>
         </ul>
-        <div class="hamburger" id="hamburger">&#9776;</div>
       </nav>
+      <!-- header-actions removed per request -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
     </div>
-    <div class="hero-content">
-      <h2>Your Dream Home Awaits</h2>
-      <p>Discover premium homes, plots, and commercial spaces across Kenya.</p>
-      <a href="#properties" class="btn">Explore Listings</a>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <h1>Discover Your Dream Home in Kenya</h1>
+          <p>Access exclusive luxury properties verified by Kenya's most trusted agents. Premium listings, transparent pricing, and seamless transactions.</p>
+          <a href="#featured" class="btn primary">Explore Listings</a>
+        </div>
+        <form class="search-form" action="search.html" method="get">
+          <input type="text" name="q" placeholder="Search location or property (e.g. Karen, 3BR)" aria-label="Search" />
+          <button class="btn primary" type="submit">Search</button>
+        </form>
+      </div>
     </div>
   </header>
 
+  <main>
+    <!-- FEATURED PROPERTIES -->
+    <section id="featured" class="container section">
+      <div class="section-head">
+        <h2>Featured Luxury Properties</h2>
+        <p class="muted">Hand-selected premium homes and investments across Kenya's most sought-after locations.</p>
+      </div>
 
+      <div class="properties-grid">
+        <article class="property-card">
+          <a href="property1.html" class="property-link">
+            <img src="images/property1.jpg" alt="3BR Modern Bungalow - Kitengela" />
+            <div class="property-meta">
+              <span class="tag">✓ Verified</span>
+              <h3>Modern Bungalow</h3>
+              <p>Kitengela, Gated Estate</p>
+              <p class="price">Ksh 6.5M</p>
+            </div>
+          </a>
+        </article>
 
+        <article class="property-card">
+          <a href="#" class="property-link">
+            <img src="images/property2.jpg" alt="2BR Premium Apartment - Nairobi West" />
+            <div class="property-meta">
+              <span class="tag">For Rent</span>
+              <h3>Premium Apartment</h3>
+              <p>Nairobi West, Modern Complex</p>
+              <p class="price">Ksh 42K/month</p>
+            </div>
+          </a>
+        </article>
 
+        <article class="property-card">
+          <a href="#" class="property-link">
+            <img src="images/property3.jpg" alt="50x100 Prime Plot - Juja" />
+            <div class="property-meta">
+              <span class="tag">Land</span>
+              <h3>Prime Development Land</h3>
+              <p>Juja, Excellent Access</p>
+              <p class="price">Ksh 950K</p>
+            </div>
+          </a>
+        </article>
 
-  <!-- Properties Section -->
-  <section id="properties" class="section">
-    <h2>Featured Properties</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="images/property1.jpg" alt="Modern Bungalow">
-        <div class="card-info">
-          <h3>3BR Modern Bungalow - Kitengela</h3>
-          <p>Gated estate, ready title, spacious compound. Ksh 6.5M</p>
-          <a href="#site-visit" class="btn-sm">Book Site Visit</a>
+        <article class="property-card">
+          <a href="#" class="property-link">
+            <img src="images/house3.jpg" alt="4BR Luxury Townhouse - Karen" />
+            <div class="property-meta">
+              <span class="tag">For Sale</span>
+              <h3>Luxury Townhouse</h3>
+              <p>Karen, Exclusive Estate</p>
+              <p class="price">Ksh 18M</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="property-card">
+          <a href="#" class="property-link">
+            <img src="images/house5.jpg" alt="Beach House - Diani" />
+            <div class="property-meta">
+              <span class="tag">Holiday Home</span>
+              <h3>Beachfront Villa</h3>
+              <p>Diani, Ocean View</p>
+              <p class="price">Ksh 12.5M</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="property-card">
+          <a href="#" class="property-link">
+            <img src="images/house6.jpg" alt="Penthouse - Upperhill" />
+            <div class="property-meta">
+              <span class="tag">For Sale</span>
+              <h3>Luxury Penthouse</h3>
+              <p>Upperhill, CBD View</p>
+              <p class="price">Ksh 38M</p>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <a href="search.html" class="btn primary">View All Properties</a>
+      </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section id="categories" class="container section">
+      <div class="section-head">
+        <h2>Browse By Category</h2>
+        <p class="muted">Explore curated property collections — click a category to view properties.</p>
+      </div>
+
+      <div class="category-tabs" role="tablist" aria-label="Property categories">
+        <!-- tabs populated by JS -->
+      </div>
+
+      <div id="category-display" class="category-display">
+        <div id="category-message" class="category-message">Select a category above to reveal premium listings.</div>
+        <div id="category-grid" class="properties-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- WHY PRIMENEST -->
+    <section id="why-us" class="section container" style="background: white; margin: 0 -20px; padding: 80px 20px;">
+      <div class="section-head">
+        <h2>Why Choose PrimeNest</h2>
+        <p class="muted">Trusted by thousands of buyers, sellers, and investors across Kenya.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature">
+          <h4>🔐 Verified Listings</h4>
+          <p>Every property is verified with complete documentation and legal clearance. No hidden surprises.</p>
+        </div>
+        <div class="feature">
+          <h4>🤝 Expert Agents</h4>
+          <p>Our certified agents provide professional guidance with deep local market knowledge and integrity.</p>
+        </div>
+        <div class="feature">
+          <h4>💰 Flexible Financing</h4>
+          <p>Multiple payment options including cash, instalments, and developer financing tailored to your needs.</p>
+        </div>
+        <div class="feature">
+          <h4>🎯 Transparent Process</h4>
+          <p>No hidden fees or surprises. Clear communication and fair pricing throughout your journey.</p>
         </div>
       </div>
-      <div class="card">
-        <img src="images/property2.jpg" alt="Apartment in Nairobi">
-        <div class="card-info">
-          <h3>2BR Apartment - Nairobi West</h3>
-          <p>Master ensuite, parking, security. Ksh 4.2M</p>
-          <a href="#site-visit" class="btn-sm">Book Site Visit</a>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="section container">
+      <div class="section-head">
+        <h2>Trusted by Kenya's Property Market</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature">
+          <h4>8,000+</h4>
+          <p>Premium Properties Listed</p>
+        </div>
+        <div class="feature">
+          <h4>150+</h4>
+          <p>Verified Agents & Brokers</p>
+        </div>
+        <div class="feature">
+          <h4>45,000+</h4>
+          <p>Happy Customers Served</p>
+        </div>
+        <div class="feature">
+          <h4>98%</h4>
+          <p>Customer Satisfaction Rate</p>
         </div>
       </div>
-      <div class="card">
-        <img src="images/property3.jpg" alt="Land in Juja">
-        <div class="card-info">
-          <h3>50x100 Plot - Juja Farm</h3>
-          <p>Prime residential land, water & electricity on-site. Ksh 950K</p>
-          <a href="#site-visit" class="btn-sm">Book Site Visit</a>
+    </section>
+
+    <!-- CALL TO ACTION - LIST PROPERTY -->
+    <section class="section container">
+      <div style="text-align: center; padding: 48px 40px; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); border-radius: 10px; color: white;">
+        <h3 style="font-size: 32px; margin-bottom: 12px; color: white;">Ready to Sell or Rent Your Property?</h3>
+        <p style="font-size: 16px; opacity: 0.95; margin-bottom: 24px;">List with PrimeNest and reach thousands of qualified buyers and renters. Get maximum exposure with our premium network.</p>
+        <div style="display: flex; gap: 12px; justify-content: center;">
+          <a class="btn primary" href="#" style="background: var(--accent); color: var(--primary);">List Your Property</a>
+          <a class="btn" href="agents.html" style="background: transparent; border: 2px solid white; color: white;">Connect with Agent</a>
         </div>
       </div>
+    </section>
 
-  
-
-    <!-- Property 1 -->
-    <div class="card">
-      <img src="images/house1.jpg" alt="Modern Bungalow">
-      <div class="card-info">
-        <h3>Modern 3BR Bungalow</h3>
-        <p>Located in Syokimau, with spacious rooms and ample parking.</p>
-        <a href="#" class="btn-sm">View Property</a>
+    <!-- BOOK SITE VISIT -->
+    <section id="site-visit" class="section container">
+      <div class="section-head">
+        <h2>Schedule a Property Viewing</h2>
+        <p class="muted">Book a guided visit to your preferred property. Same-day appointments available via WhatsApp.</p>
       </div>
+      <form action="https://wa.me/254712345678" target="_blank" class="visit-form">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Full Name" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Email Address" required />
+          <input type="text" name="property" placeholder="Property Name (Optional)" />
+        </div>
+        <div class="form-row">
+          <input type="date" name="date" placeholder="Preferred Viewing Date" required />
+          <select name="time" required style="flex: 1;">
+            <option value="">Preferred Time</option>
+            <option value="morning">Morning (8 AM - 12 PM)</option>
+            <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+            <option value="evening">Evening (4 PM - 6 PM)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn primary">Schedule Viewing on WhatsApp</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">PrimeNest Real Estate</div>
+      <div class="footer-copy">&copy; 2026 PrimeNest Real Estate. All Rights Reserved. | Premium Property Solutions for Kenya</div>
     </div>
+  </footer>
 
-    <!-- Property 2 -->
-    <div class="card">
-      <img src="images/house2.jpg" alt="2-bedroom apartment">
-      <div class="card-info">
-        <h3>2BR Apartment – Ruaka</h3>
-        <p>Affordable, near amenities, great for small families.</p>
-        <a href="#" class="btn-sm">View Property</a>
-      </div>
-    </div>
-
-    <!-- Property 3 -->
-    <div class="card">
-      <img src="images/house3.jpg" alt="Townhouse in Karen">
-      <div class="card-info">
-        <h3>4BR Townhouse – Karen</h3>
-        <p>Luxury living with a garden and private gate.</p>
-        <a href="#" class="btn-sm">View Property</a>
-      </div>
-    </div>
-
-    <!-- Property 4 -->
-    <div class="card">
-      <img src="images/house4.jpg" alt="Studio apartment">
-      <div class="card-info">
-        <h3>Studio Apartment – Kilimani</h3>
-        <p>Compact and stylish for urban living.</p>
-        <a href="#" class="btn-sm">View Property</a>
-      </div>
-    </div>
-
-    <!-- Property 5 -->
-    <div class="card">
-      <img src="images/house5.jpg" alt="Beach House in Diani">
-      <div class="card-info">
-        <h3>Beach House – Diani</h3>
-        <p>3BR holiday home near the ocean. Fully furnished.</p>
-        <a href="#" class="btn-sm">View Property</a>
-      </div>
-    </div>
-
-    <!-- Property 6 -->
-    <div class="card">
-      <img src="images/house6.jpg" alt="Penthouse in Nairobi">
-      <div class="card-info">
-        <h3>Penthouse – Upperhill</h3>
-        <p>Top floor luxury with a city skyline view.</p>
-        <a href="#" class="btn-sm">View Property</a>
-      </div>
-    </div>
-
-    <!-- Property 7 -->
-    <div class="card">
-      <img src="images/house7.jpg" alt="Maisonette">
-      <div class="card-info">
-        <h3>5BR Maisonette – Runda</h3>
-        <p>Spacious, high-end home with manicured lawns.</p>
-        <a href="#" class="btn-sm">View Property</a>
-      </div>
-    </div>
-
-    <!-- Property 8 -->
-    <div class="card">
-      <img src="images/house8.jpg" alt="Student Bedsitter">
-      <div class="card-info">
-        <h3>Student Bedsitter – Juja</h3>
-        <p>Ideal for university students, secure and affordable.</p>
-        <a href="#" class="btn-sm">View Property</a>
-      </div>
-    </div>
-
-    <!-- Property 9 -->
-    <div class="card">
-      <img src="images/house9.jpg" alt="Gated community home">
-      <div class="card-info">
-        <h3>Gated Community – Kitengela</h3>
-        <p>Family home in a secure, child-friendly neighborhood.</p>
-        <a href="#" class="btn-sm">View Property</a>
-      </div>
-    </div>
-
-    <!-- Property 10 -->
-    <div class="card">
-      <img src="images/house10.jpg" alt="Off-grid cabin">
-      <div class="card-info">
-        <h3>Eco Cabin – Nanyuki</h3>
-        <p>Off-grid, nature retreat perfect for weekend escapes.</p>
-        <a href="#" class="btn-sm">View Property</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-<!-- Why Choose Us -->
-  <section id="why-us" class="section light">
-    <h2>Why Choose PrimeNest?</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>Verified Listings</h3>
-        <p>All properties are verified, with proper documentation.</p>
-      </div>
-      <div class="feature">
-        <h3>Flexible Payment</h3>
-        <p>We offer both cash and installment options.</p>
-      </div>
-      <div class="feature">
-        <h3>Free Site Visits</h3>
-        <p>Book a free guided site visit anytime at your convenience.</p>
-      </div>
-      <div class="feature">
-        <h3>Trusted Agents</h3>
-        <p>Experienced team to guide you through every step.</p>
-      </div>
-
-
-
-
-    </div>
-  </section>
-
- <!-- Site Visit Booking -->
-<section id="site-visit" class="section">
-  <h2>Book a Site Visit</h2>
-  <form action="https://wa.me/254712345678" target="_blank" class="visit-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="tel" placeholder="Phone Number" required>
-
-    <select required>
-      <option value="">Select Property</option>
-      <option>3BR Bungalow - Kitengela</option>
-      <option>2BR Apartment - Nairobi West</option>
-      <option>50x100 Plot - Juja</option>
-      <option>4BR Maisonette - Ruiru</option>
-      <option>1BR Studio Apartment - Kilimani</option>
-      <option>5BR Villa - Karen</option>
-      <option>Serviced Apartments - Westlands</option>
-      <option>Commercial Space - Thika Road</option>
-      <option>Vacant Land - Nanyuki</option>
-      <option>Townhouse - Syokimau</option>
-      <option>2BR Flat - Donholm</option>
-      <option>Luxury Apartment - Lavington</option>
-    </select>
-
-    <button type="submit">Book via WhatsApp</button>
-  </form>
-</section>
-
-
- 
-<footer class="footer">
-  <p>&copy; 2025 PrimeNest Real Estate. All rights reserved.</p>
-</footer>
-
-
-
+  <script src="scripts.js"></script>
 </body>
 </html>
-
-
-
- <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>

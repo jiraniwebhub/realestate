@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Search Properties - PrimeNest Real Estate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">PrimeNest</a>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search.html?status=buy" class="active">Buy</a></li>
+          <li><a href="search.html?status=rent">Rent</a></li>
+          <li><a href="#">Sell</a></li>
+          <li><a href="agents.html">Our Agents</a></li>
+          <li><a href="blog.html">Insights</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="btn" href="#login">Sign In</a>
+        <a class="btn primary" href="#signup">Get Started</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div style="display: grid; grid-template-columns: 320px 1fr; gap: 28px;">
+      <!-- CATEGORIES SIDEBAR (replaces old filters) -->
+      <aside style="position: sticky; top: 100px; height: fit-content;">
+        <div style="background: white; padding: 18px; border-radius: 10px; box-shadow: var(--shadow-md);">
+          <h4 style="color: var(--primary); font-size: 18px; margin-bottom: 16px;">Property Categories</h4>
+          <div class="category-tabs" role="tablist" aria-label="Property categories">
+            <!-- tabs populated by JS -->
+          </div>
+        </div>
+      </aside>
+
+      <!-- RESULTS SECTION -->
+      <section>
+        <!-- HEADER -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--border-color);">
+          <div>
+            <h2 style="color: var(--primary); font-size: 28px; margin-bottom: 4px;">Search Results</h2>
+            <p style="color: var(--text-muted);"><span id="search-count">Select a category to browse listings</span></p>
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <button class="btn primary" style="background: white; color: var(--primary); border: 1px solid var(--accent);">Grid</button>
+            <button class="btn">Map View</button>
+          </div>
+        </div>
+
+        <!-- PROPERTIES GRID -->
+        <div id="category-grid" class="properties-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;" aria-live="polite"></div>
+
+        <!-- PAGINATION -->
+        <div style="display: flex; justify-content: center; gap: 12px; margin-top: 48px;">
+          <button class="btn">← Previous</button>
+          <button class="btn primary" style="background: var(--primary); color: white;">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button class="btn">Next →</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">PrimeNest Real Estate</div>
+      <div class="footer-copy">&copy; 2026 PrimeNest Real Estate. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
