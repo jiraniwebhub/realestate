@@ -783,3 +783,16 @@ const nav = document.getElementById("main-nav");
 toggle.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("nav-toggle");
+  const nav = document.getElementById("main-nav");
+
+  console.log("Toggle button:", toggle);
+  console.log("Nav menu:", nav);
+
+  toggle.addEventListener("click", function () {
+    nav.classList.toggle("active");
+    console.log("Menu toggled");
+  });
+});
