@@ -579,3 +579,154 @@ body {
   .modal{flex-direction:column}
   .modal .modal-media{height:320px}
 }
+
+
+/* =========================
+   MOBILE RESPONSIVE FIXES
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container safety */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* NAVBAR MOBILE */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .main-nav {
+    display: none; /* hidden by default */
+    width: 100%;
+    background: white;
+    padding: 10px 0;
+  }
+
+  .main-nav.active {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+/* HERO MOBILE */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-copy h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .search-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-form input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* PROPERTY GRID MOBILE */
+@media (max-width: 768px) {
+  .properties-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .property-card {
+    width: 100%;
+  }
+}
+
+/* FEATURES GRID MOBILE */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CATEGORY SECTION MOBILE */
+@media (max-width: 768px) {
+  .category-tabs {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .category-display {
+    padding: 10px;
+  }
+}
+
+/* FORMS MOBILE FIX */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  input, select {
+    width: 100%;
+  }
+}
+
+/* CTA MOBILE */
+@media (max-width: 768px) {
+  .section div[style*="display: flex"] {
+    flex-direction: column !important;
+  }
+}
+
+/* SMALL PHONES (≤480px) */
+@media (max-width: 480px) {
+  .hero-copy h1 {
+    font-size: 22px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

@@ -776,3 +776,10 @@ function formatCurrency(value) {
   try{ window.propertyDataGlobal = propertyData; }catch(e){}
 
 })();
+
+const toggle = document.getElementById("nav-toggle");
+const nav = document.getElementById("main-nav");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
