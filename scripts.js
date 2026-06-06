@@ -796,3 +796,13 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Menu toggled");
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("nav-toggle");
+  const nav = document.getElementById("main-nav");
+
+  toggle.onclick = () => {
+    nav.classList.toggle("active");
+  };
+});
