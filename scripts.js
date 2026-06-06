@@ -806,3 +806,31 @@ document.addEventListener("DOMContentLoaded", () => {
     nav.classList.toggle("active");
   };
 });
+
+
+(function () {
+  document.addEventListener("DOMContentLoaded", () => {
+
+    const toggle = document.getElementById("nav-toggle");
+    const nav = document.getElementById("main-nav");
+
+    if (!toggle || !nav) return;
+
+    // REMOVE any broken duplicate listeners by cloning element
+    const newToggle = toggle.cloneNode(true);
+    toggle.parentNode.replaceChild(newToggle, toggle);
+
+    // SINGLE CLEAN TOGGLE (override everything above)
+    newToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+
+    // Close menu on link click
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("active");
+      });
+    });
+
+  });
+})();

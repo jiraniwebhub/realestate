@@ -793,3 +793,17 @@ img {
     display: block;
   }
 }
+
+.main-nav {
+  display: none;
+}
+
+.main-nav.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+}
